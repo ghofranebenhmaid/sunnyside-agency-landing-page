@@ -1,0 +1,78 @@
+.testimonial {
+    margin: 4rem auto;
+   @include breakpoint-up(large) {
+      padding: 10rem 17rem 10rem 17rem;
+   }
+   @include breakpoint-up(medium) {
+      padding: 5rem 10rem 5rem 10rem;
+   }
+   &__title {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      color: $GrayishBlue;
+      font-family: 'Fraunces', serif;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      @include breakpoint-up(large) {
+         margin-bottom: 5rem;
+         font-size: 1.5rem;
+      }
+      @include breakpoint-up(medium) {
+         margin-bottom: 2rem;
+      }
+   }
+   &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      @include breakpoint-up(large) {
+         display: flex;
+      }
+      @include breakpoint-up(medium) {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: wrap;
+      }
+   }
+   &__item {
+      text-align: center;
+      padding: 2rem 4rem 2rem 4rem;
+      @include breakpoint-up(large) {
+         flex: 1;
+         text-align: center;
+         padding: 0.9375rem;
+      }
+      @include breakpoint-up(medium) {
+         text-align: center;
+         //  padding: 2rem 10rem 2rem 10rem ;
+      }
+   }
+   &__icon {
+      @include breakpoint-up(large) {
+         margin-bottom: 2.5rem;
+      }
+      margin-bottom: 1.5rem;
+      img {
+         width: 70px;
+         border-radius: 50%;
+      }
+   }
+   &__description {
+      @include breakpoint-up(large) {
+         margin-bottom: 4rem;
+      }
+      margin-bottom: 2.5rem;
+      font-size: 15px;
+      line-height: 1.6;
+      color: $DarkGrayishBlue;
+   }
+   &__name {
+      font-family: 'Fraunces', serif;
+   }
+   &__jobtitle {
+      font-size: 12px;
+      margin-top: 0.5rem;
+      color: $GrayishBlue;
+   }
+}

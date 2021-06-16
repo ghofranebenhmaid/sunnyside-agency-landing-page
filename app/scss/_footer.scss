@@ -1,0 +1,31 @@
+.footer {
+   background-color: hsla(168, 34%, 41%, 0.719);
+   padding: 20px auto;
+   &__content {
+      padding: 5rem 0 5rem 0;
+      flex-direction: column;
+   }
+   &__logo {
+      svg {
+         path {
+            fill: $DarkDesaturated;
+         }
+      }
+   }
+   &__menu {
+      a {
+         color: $DarkDesaturated;
+         padding: 2rem 2rem;
+      }
+   }
+   &__icons {
+       padding-top: 2rem;
+      a {
+         padding: .5rem;
+      }
+        img {
+         width: 30px;
+         object-fit: cover;
+      }
+   }
+}

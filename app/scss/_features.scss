@@ -1,0 +1,40 @@
+.features {
+   width: 100%;
+    transform: translateY(-5px);
+   flex-direction: column;
+
+   @include breakpoint-up(large) {
+      flex-direction: row;
+   }
+   @include breakpoint-up(medium) {
+      flex-direction: row;
+   }
+   &__img {
+      position: relative;
+      flex: 1;
+       @include breakpoint-down(small) {
+      &:last-child{
+      transform: translateY(-5px);
+
+      }
+   }
+   }
+   &__text {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      margin: 3rem;
+      @include breakpoint-up(large) {
+         margin: 5rem 10rem;
+      }
+      h2 {
+         margin-bottom: 1.5rem;
+      }
+      &--desaturated {
+         color: $DarkDesaturated;
+      }
+      &--blue {
+         color: $DarkBlue;
+      }
+   }
+}

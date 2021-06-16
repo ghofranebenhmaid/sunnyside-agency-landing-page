@@ -1,0 +1,84 @@
+.feature {
+   transform: translateY(-5px);
+   &__content {
+      @include breakpoint-up(medium) {
+         max-width: 70%;
+      }
+      @include breakpoint-up(large) {
+         max-width: 45%;
+      }
+   }
+   &__grid {
+      @include breakpoint-up(large) {
+         display: flex;
+         &--reverse {
+            flex-direction: row-reverse;
+         }
+      }
+      @include breakpoint-up(medium) {
+         display: flex;
+         &--reverse {
+            flex-direction: row-reverse;
+         }
+      }
+   }
+
+   &__image {
+      flex: 1;
+   }
+   &__text {
+      flex: 1;
+      text-align: center;
+      max-width: 80%;
+      margin: 5rem auto;
+      @include breakpoint-up(large) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         text-align: left;
+      }
+      @include breakpoint-up(medium) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         text-align: left;
+      }
+   }
+   &__description {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-size: $font-sm;
+      line-height: 1.6;
+      color: $DarkGrayishBlue;
+   }
+   &__button {
+      position: relative;
+      text-transform: uppercase;
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      color: $VeryDarkDesaturatedBlue;
+      padding: 0 10px 0 10px;
+
+      &:before {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 10px;
+         left: 0;
+         bottom: 0;
+         border-radius: 10px;
+         z-index: -1;
+         opacity: 0.5;
+      }
+      &--yellow:before {
+         background-color: $Yellow;
+      }
+      &--softRed:before {
+         background-color: $SoftRed;
+      }
+   }
+}

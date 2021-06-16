@@ -1,0 +1,12 @@
+.gallery {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   &__item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @include breakpoint-up(large) {
+         grid-template-columns: repeat(4, 1fr);
+      }
+   }
+}
