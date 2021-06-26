@@ -1,5 +1,4 @@
 .feature {
-   transform: translateY(-5px);
    &__content {
       @include breakpoint-up(medium) {
          max-width: 70%;
@@ -36,7 +35,6 @@
          flex-direction: column;
          align-items: center;
          justify-content: center;
-
          text-align: left;
       }
       @include breakpoint-up(medium) {

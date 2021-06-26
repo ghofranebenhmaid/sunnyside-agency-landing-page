@@ -1,6 +1,5 @@
 .features {
    width: 100%;
-    transform: translateY(-5px);
    flex-direction: column;
 
    @include breakpoint-up(large) {
@@ -12,12 +11,7 @@
    &__img {
       position: relative;
       flex: 1;
-       @include breakpoint-down(small) {
-      &:last-child{
-      transform: translateY(-5px);
-
-      }
-   }
+    
    }
    &__text {
       position: absolute;
